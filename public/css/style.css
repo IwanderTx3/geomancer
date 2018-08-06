@@ -1,0 +1,217 @@
+body{
+    background: url(../images/geomancer.jpeg)  no-repeat center center fixed;
+    background-size: cover;
+    color:white;
+    }
+
+.geomancer{
+    background: url(../images/creation.jpeg)  no-repeat center center fixed;
+    background-size: cover;
+}
+
+.world-viewer{
+    background: url(../images/worldviewer.jpeg)  no-repeat center center fixed;
+    background-size: cover;
+}
+
+.darkside{
+    background: url(../images/destruction.jpeg)  no-repeat center center fixed;
+    background-size: cover;
+}
+
+
+.big-box{
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin-top: 100px;
+}
+
+.big-box h3{
+    text-align: center;
+}
+
+.titlebar{
+    background: url(../images/copper.jpeg) no-repeat center center fixed;
+    background-size: cover;
+    width: 30%;
+    line-height: 2.5;
+    min-width: 500px;
+    height: 128px;
+    color: snow;
+    border-radius: 50%;
+    border-style: outset;
+    text-align: center;
+    margin: auto;
+    margin-top: 150px;
+    margin-bottom: 50px;
+
+}
+
+.titlebarp{
+    margin: 40px;
+}
+.container{
+    display: flex;
+    padding-left: 10px;
+    width: 20%;
+    min-width: 200px;
+    height: 90px;
+    margin: auto;
+}
+
+.column-container{
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    width: 20%;
+    min-width: 200px;
+    height: 90px;
+    margin: auto;
+    align-content: center;
+    justify-content: center;
+}
+.column-container h3{
+    margin: auto;
+}
+
+.column-container h4{
+    margin: auto;
+    padding: 15px;
+}
+
+.column-container div{
+    margin: auto;
+}
+.container form{
+    display: flex;
+    flex-direction: column;
+}
+
+.container form div{
+    padding: 5px;
+}
+
+.loginbtn{
+    margin: auto;
+}
+
+.message-box{
+    flex-direction: column;
+}
+.outer-box{
+    display: flex;
+    flex-direction: column;
+    
+}
+.geobtn-box{
+    display: flex;
+    flex-direction: row;
+    
+    justify-content: space-evenly;
+
+}
+
+.geobtn{
+    width: 73px;
+    height: 50px;
+    border-radius: 25%;
+    border-color: silver;
+    border-width: 3px;
+    border-style: ridge;
+    background-color: black;
+    color: white;
+}
+
+.logout{
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    width: 50px;
+    height: 50px;
+    background-color: crimson;
+    color: white;
+}
+
+.leftbox{
+position: absolute;
+left: 50px;
+top: 100px;
+height: 600px;
+width: 300px;
+border-color: silver;
+border-width: 3px;
+border-style: ridge;
+background-color: rgb(0, 0, 0, 0.5);
+color: white;
+word-wrap: break-word;
+
+}
+
+.rightbox{
+    position: absolute;
+    right: 50px;
+    top: 100px;
+    height: 600px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    border-color: silver;
+    border-width: 3px;
+    border-style: ridge;
+    background-color: rgb(0, 0, 0, 0.5);
+    color: white;
+    word-wrap: break-word;
+    }
+
+    .preview{
+        height: 250px;
+        width: 250px;
+        border-color: silver;
+        border-width: 3px;
+        border-style: ridge;
+        margin: auto;
+    }
+
+    .genbtn{
+        display: flex;
+        /* width: 73px; */
+        height: 50px;
+        border-radius: 25%;
+        border-color: silver;
+        border-width: 3px;
+        border-style: ridge;
+        background-color: black;
+        color: white;
+        margin: auto, 17px, auto, 20px;
+        align-self: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 25px;
+        margin-bottom: -25px;
+    }
+
+    .pubbtn{
+        display: flex;
+        /* width: 73px; */
+        height: 50px;
+        border-radius: 25%;
+        border-color: silver;
+        border-width: 3px;
+        border-style: ridge;
+        background-color: black;
+        color: white;
+        margin: auto, 17px, auto, 20px;
+        align-self: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 25px;
+        margin-bottom: 10px;
+    }
+
+    .worldNameBox{
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }

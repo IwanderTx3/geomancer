@@ -1,0 +1,45 @@
+
+<html lang='en'>
+<head>
+    <meta charset='utf-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Geomancer</title>
+</head>
+<body class='world-viewer'>
+<div class='big-box'>
+<div class='titlebar'><h1>This is Geomancer's gallery</h1></div>
+<div ><a href='/logout'><button class='logout'> Log Out </button></a></div>
+<div class='container'>
+{{#username}}
+<div class='outer-box'>
+<p>Welcome   {{username}} what would you like to do?</p>
+<div class='geobtn-box'>
+<a href='/creation'><button class='geobtn'> Create a world </button></a>
+<a href='/control'><button class='geobtn'> Go Back </button></a>
+<a href='/darkside'><button class='geobtn'> Kill a world </button></a>
+</div>
+</div>
+<div class='leftbox'> Active game list
+{{#maps}}
+<ul>
+<li> {{id}}: {{mapname}}
+</ul>
+{{/maps}}
+</div>
+<div class='rightbox'> Inactive game list
+</div>
+{{/username}}
+{{^username}}
+<div class='message-box'>
+You are not logged in.  Please log in before attempting to uses this service.
+<a href='/login'><button> Login </button></a>
+</div>
+{{/username}}
+</div>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="/js/geomancer.js"></script>
+</div>
+</body>
+</head>
+</html>

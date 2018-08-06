@@ -1,0 +1,27 @@
+{
+  "development": {
+    "username": "v3development",
+    "password": null,
+    "database": "geomancer",
+    "host": "localhost",
+    "dialect": "postgres",
+    "port":5433
+  
+  },
+  "test": {
+    "username": "v3development",
+    "password": null,
+    "database": "geomancer",
+    "host": "localhost",
+    "dialect": "postgres",
+    "port":5433
+  },
+  "production": {
+    "username": "v3development",
+    "password": null,
+    "database": "geomancer",
+    "host": "localhost",
+    "dialect": "postgres",
+    "port":5433
+  }
+}

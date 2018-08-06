@@ -1,0 +1,28 @@
+{
+  "name": "geomancer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "scribe.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Van",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "bluebird": "^3.5.1",
+    "body-parser": "^1.18.3",
+    "cookie-parser": "^1.4.3",
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "express-session": "^1.15.6",
+    "mustache": "^2.3.0",
+    "mustache-express": "^1.2.7",
+    "mysql2": "^1.5.3",
+    "nodemon": "^1.18.3",
+    "pg": "^7.4.3",
+    "pg-promise": "^8.4.5",
+    "sequelize": "^4.38.0",
+    "sequelize-cli": "^4.0.0"
+  }
+}

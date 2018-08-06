@@ -1,0 +1,46 @@
+
+<html lang='en'>
+<head>
+    <meta charset='utf-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Geomancer</title>
+</head>
+<body class='geomancer'>
+<div class='big-box'>
+<div class='titlebar'><h1>This is Geomancer's heart</h1></div>
+<div ><a href='/logout'><button class='logout'> Log Out </button></a></div>
+<div class='container'>
+{{#username}}
+<div class='outer-box'>
+<p>Welcome   {{username}} what would you like to do?</p>
+<div class='geobtn-box'>
+<a href='/control'><button class='geobtn'> Go back </button></a>
+<a href='/world-viewer'><button class='geobtn'> View a world </button></a>
+<a href='/darkside'><button class='geobtn'> Kill a world </button></a>
+</div>
+</div>
+<div class='leftbox'> This is where the sliders and radio buttons for specifing the world paramaters will go
+</div>
+<div class='rightbox'> 
+<div class='worldNameBox'><input type="text" name="username" placeholder='World Name'/><input type="submit" value="Submit"/></div>
+<a ><button class='genbtn' id='genbtn' onclick='generateMap()'> Generate World </button></a>
+
+<div class='preview' id="gen-respones"></div>
+<a href='/postmap'><button class='pubbtn' id='pubbtn'> Publish </button></a>
+</div>
+{{/username}}
+{{^username}}
+<div class='message-box'>
+You are not logged in.  Please log in before attempting to uses this service.
+<a href='/login'><button> Login </button></a>
+</div>
+{{/username}}
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="/js/geomancer.js"></script>
+</div>
+</body>
+</head>
+</html>
