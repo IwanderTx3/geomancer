@@ -1,10 +1,38 @@
-var mh = 128;
-var mw = 64;
+var mh = 250;
+var mw = 250;
 var worldMap = [];
 var cornerStones =[];
 var mapSeedSpread = 9;
 var apiroot='http://localhost:3100'
 
+function randomPicker()
+    {
+    let seed = Math.floor(Math.random() * 100);
+
+    switch(seed){
+        case seed >0 && seed<9:
+        return Number(0);
+        case seed >0 && seed<29:
+        return Number(1);
+        case seed >0 && seed<39:
+        return Number(2);
+        case seed >0 && seed<49:
+        return Number(3);
+        case seed >0 && seed<59:
+        return Number(4);
+        case seed >0 && seed<69:
+        return Number(5);
+        case seed >0 && seed<89:
+        return Number(6);
+        case seed >90 && seed<99:
+        return Number(7);
+        default:
+        return Number(0);
+    }
+
+
+
+    }
 
 function tile(mapColum,mapRow,coord)
     {

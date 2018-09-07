@@ -2,25 +2,6 @@ var express = require('express');
 var router = express.Router();
 var db = require('../models/index');
 
-// /* GET mappublisher listing. */
-// router.get('/world-viewer', function (req, res, next) {
-//     console.log('###################')
-//     db.map_publisher.findAll({
-//         attributes: ['id', 'mapname','createdAt']
-//     })
-//         .then(function(maps){
-//             console.log('###################')
-//             res.render('world-view',{maps:maps})
-//         })
-//         .catch((error) => { 
-//             console.log(error)
-//             //return 
-//             res.json({
-//             error: true,
-//             data: [],
-//             error: error})})
-//             })
- 
 /* POST map */
 router.post('/postmap', function (req, res, next) {
     const {
@@ -87,44 +68,27 @@ router.delete('/map/:id', function (req, res, next) {
         }));
 });
 
-router.get('/map/:id', function (req, res, next) {
-    const map_id = req.params.id;
-    const { mapname, mapfile } = req.body;
-    model.map_publisher.update({
-            mapname: mapname,
-            mapfile: mapfile
-        }, {
-            where: {
-                id: map_id
-            }
-        })
-        .then(todo => res.status(201).json({
-            error: false,
-            message: 'Map has been updated.'
-        }))
-        .catch(error => res.json({
-            error: true,
-            error: error
-        }));
-});
-
-// router.get('/map/:id', function (req, res) {
-//     console.log('###################')
-//     var mapid = req.params.id
-//     db.map_publisher.findOne({
-//         where : [ id = mapid ]
-//     })
-//         .then(function(maps){
-//             console.log('###################')
-//             res.render('world-view',{maps:maps})
+// router.get('/map/:id', function (req, res, next) {
+//     const map_id = req.params.id;
+//     const { mapname, mapfile } = req.body;
+//     model.map_publisher.update({
+//             mapname: mapname,
+//             mapfile: mapfile
+//         }, {
+//             where: {
+//                 id: map_id
+//             }
 //         })
-//         .catch((error) => { 
-//             console.log(error)
-//             //return 
-//             res.json({
+//         .then(todo => res.status(201).json({
+//             error: false,
+//             message: 'Map has been updated.'
+//         }))
+//         .catch(error => res.json({
 //             error: true,
-//             data: [],
-//             error: error})})
-//             })
+//             error: error
+//         }));
+// });
+
+
 
 module.exports = router;
