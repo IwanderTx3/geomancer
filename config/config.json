@@ -9,10 +9,10 @@
   
   },
   "test": {
-    "username": "v3development",
-    "password": null,
-    "database": "geomancer",
-    "host": "localhost",
+    "username": "Valdemar",
+    "password": "czarka0315",
+    "database": "geomancerscrolls",
+    "host": "geomancer.clw53lchrbyq.us-east-1.rds.amazonaws.com",
     "dialect": "postgres",
     "port":5433
   },
